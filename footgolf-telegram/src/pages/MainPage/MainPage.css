@@ -1,161 +1,196 @@
 .background {
     background-size: cover;
     height: 844px;
-    width: 390px;
+    width: 100%;
+
 }
 
 .background-container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .up-container {
-    position: relative;
-    top: -800px;
-    left: 10px;
+    position: absolute;
+    top: 20px;
     justify-self: center;
     display: flex;
     margin-right: auto;
     margin-left: auto;
 }
 
+.score-cont {
+    background: none;
+    display: flex;
+    position: relative;
+    top: -140px;
+    width: 150px;
+    left: 10px;
+}
+
 .conts {
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
     margin-right: 10px;
     margin-left: 10px;
+    height: 90px;
 
 }
 
 .score {
-    position: absolute;
-    left: 57px;
     color: white;
     text-align: center;
     border-radius: 1rem;
-    top: -5px;
     width: 110px;
     background-color: black;
     opacity: 50%;
+    margin: 0;
+    margin-left: 20px;;
 }
 
 .game {
-    position: absolute;
     height: 370px;
-    top: 150px;
-    background-color: black;
-    opacity: 50%;
+    background-color: rgba(0,0,0, 0.5);
     border-radius: 20px;
     width: calc(100% - 20px);
-    left: 10px;
+    position: relative;
+    top: -700px;
 }
 
-.get-code{
-    position: relative;
+
+.get-code {
     text-align: center;
     font-family: Roboto, sans-serif;
     font-weight: bold;
-    color: #0171E2;
+    color: #0071E2;
+
+    margin: 0;
 }
 
-.bottom-container {
-    width: 390px;
-    height: 195px;
-    bottom: 195px;
-    position: absolute;
-    display: block;
-    align-items: center;
+.get-code-cont{
+    position: relative;
+    top: -45px;
+    left: 20px;
 }
 
-.bottom-page-links{
-    position: relative ;
+.bottom-page-links {
+
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -650px;
 }
 
-.bottom-cont-img{
+.bottom-cont-img {
     align-self: center;
 }
 
-.bottom-up-bar{
-    position: relative;
-    top: -110px;
-}
-
-.link-button{
-    background: none;
-    border: none;
+.buttons {
+    display: flex;
+    justify-content: center;
     position: relative;
     top: -150px;
-    width: 30%;
-}
-.link-button img{
-    width: 70px;
 }
 
-.energy{
+.link-button {
+    margin-left: 3px;
+    margin-right: 3px;
+    border: none;
+    border-radius: 1.1rem;
     position: relative;
-    top: -120px;
-    left: 280px;
-    width: 30px;
+    height: 90px;
+    width: 90px;
+    padding: 0;
 }
-.energy-bar{
+
+.link-button img {
+    width: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.energy {
     position: relative;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.energy-bar {
     width: 230px;
-    top:-80px;
-    left: 30px;
     height: 30px;
     background-color: black;
     border-radius: 1rem;
+    color: white;
+    padding-left: 1rem;
     opacity: 80%;
 }
 
 
-.gem-count{
+.gem-count {
     background-color: #0071E2;
     width: 140px;
     height: 70px;
-    position: absolute;
-    left: 0;
-    top: 560px;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
+    position: relative;
+    display: block;
+    top: -670px;
+    padding: 0.5rem;
+    left: -32%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
-.gem-count-inner{
-    background-color: #00FFFF;
-    width: 135px;
-    height: 60px;
-    top: 5px;
+.gem-content {
     position: relative;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    align-items: center;
-    display: flex;
+    top: -60px;
 }
-.gem{
+
+.bottom-up-bar{
+    display: flex;
+    position: relative;
+    top: -165px;
+}
+
+.inner-blue {
+    background: #61dafb;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.gem {
     height: 50px;
 }
 
 .frens {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
     position: relative;
-    height: 70px;
     top: -85px;
-    left: 40px;
 }
 
 .ball {
-    position: absolute;
-    width: 30px;
-    left: 20px;
-    top: 10px;
+    height: 20px;
+    width: auto;
 }
 
 .rank {
-    position: absolute;
     width: 50px;
-    left: 100px;
-    top: 35px;
     height: auto;
+    position: relative;
+    top: -60px;
+    left: 100px;
 }
 
 .cont-images {
     height: 90px;
+    width: 170px;
 }
