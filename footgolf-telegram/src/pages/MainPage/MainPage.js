@@ -6,8 +6,13 @@ import rookie from '../../assets/ranks/endusuk.png'
 import ball from '../../assets/main scene/football.png'
 import frensLogo from '../../assets/main scene/frens.png'
 import gem from '../../assets/main scene/gem.png'
+import energy from '../../assets/main scene/şimşek.png'
+import earn from '../../assets/main scene/para.png'
+import rocket from '../../assets/main scene/roket.png'
+
 
 import './MainPage.css'
+import Ball from "../../components/Ball";
 
 
 const MainPage = () => {
@@ -21,42 +26,52 @@ const MainPage = () => {
                 <div className="conts">
                     <img src={contLeft} className="cont-images"/>
                     <img src={rank} className="rank"/>
-                    <img src={ball} className="ball"/>
-                    <p className="score">1111111</p>
+                    <div className="score-cont">
+                        <img src={ball} className="ball"/>
+                        <p className="score">1111111</p>
+                    </div>
+
                 </div>
                 <div className="conts">
                     <img src={contRight} className="cont-images"/>
-                    <img src={frensLogo} className="frens"/>
+                    <div className="frens">
+                        <img src={frensLogo} style={{width: "70px"}}/>
+                    </div>
+
                 </div>
             </div>
             <div className="game">
-
+                <Ball xLoc={0} yLoc={0}></Ball>
+                <Ball xLoc={1} yLoc={100}></Ball>
             </div>
             <div className="gem-count">
-                <div className="gem-count-inner">
+                <p className="inner-blue"></p>
+                <div className="gem-content">
                     <img src={gem} alt="gem" className="gem"/>
-                    <p className="get-code">Get Secret Code!</p>
+                    <div className="get-code-cont">
+                        <p className="get-code">Get Secret</p>
+                        <p className="get-code"> Code!</p>
+                    </div>
                 </div>
+
             </div>
-
-            <div className="bottom-container">
-
-
-                {/*<div className="bottom-up-bar">*/}
-                {/*    <div className="energy-bar">qcrqfl qkjdfkl</div>*/}
-                {/*    <img src={energy} className="energy"/>*/}
-                {/*</div>*/}
-                {/*<div className="bottom-page-links">*/}
-                {/*    <button className="link-button">*/}
-                {/*        <img src={earn} className="links"/>*/}
-                {/*    </button>*/}
-                {/*    <button className="link-button">*/}
-                {/*        <img src={frensLogo} className="links"/>*/}
-                {/*    </button>*/}
-                {/*    <button className="link-button">*/}
-                {/*        <img src={rocket} className="links"/>*/}
-                {/*    </button>*/}
-                {/*</div>*/}
+            <div className="bottom-page-links">
+                <img src={contLeft}/>
+                <div className="bottom-up-bar">
+                    <div className="energy-bar"></div>
+                    <img src={energy} className="energy"/>
+                </div>
+                <div className="buttons">
+                    <button className="link-button">
+                        <img src={earn} className="links"/>
+                    </button>
+                    <button className="link-button">
+                        <img src={frensLogo} className="links"/>
+                    </button>
+                    <button className="link-button">
+                        <img src={rocket} className="links"/>
+                    </button>
+                </div>
             </div>
 
         </div>
