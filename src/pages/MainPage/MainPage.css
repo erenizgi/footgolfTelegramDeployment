@@ -1,0 +1,206 @@
+.background {
+    background-size: cover;
+    height: 844px;
+    width: 100%;
+
+}
+
+.background-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-container {
+    position: absolute;
+    top: 20px;
+    justify-self: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.score-cont {
+    background: none;
+    display: flex;
+    position: relative;
+    top: -140px;
+    width: 150px;
+    left: 10px;
+}
+
+.conts {
+
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.score {
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    width: 110px;
+    background-color: black;
+    opacity: 50%;
+    position: relative;
+    top: 10px;
+    left: -10px;
+    margin: 0 0 0 20px;;
+}
+
+.game {
+    height: 370px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 20px;
+    width: calc(100% - 20px);
+    position: relative;
+    top: -700px;
+}
+
+
+.get-code {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #0071E2;
+
+    margin: 0;
+}
+
+.get-code-cont{
+    position: relative;
+    top: -45px;
+    left: 20px;
+}
+
+.bottom-page-links {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -650px;
+}
+
+.bottom-cont-img {
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+}
+
+.link-button {
+    margin-left: 3px;
+    margin-right: 3px;
+    border: none;
+    border-radius: 1.1rem;
+    position: relative;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+}
+
+.link-button img {
+    width: 90px;
+    padding: 0;
+    margin: 0;
+}
+
+.energy {
+    position: relative;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.energy-bar {
+    height: 25px;
+    background-color: gold;
+    border: 2px solid purple;
+    border-radius: 1rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    min-width: 35px;
+    max-width: 230px;
+    opacity: 80%;
+}
+
+
+.gem-count {
+    background-color: #0071E2;
+    width: 140px;
+    height: 70px;
+    position: relative;
+    display: block;
+    top: -670px;
+    padding: 0.5rem;
+    left: -32%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.gem-content {
+    position: relative;
+    top: -60px;
+}
+
+.bottom-up-bar{
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;
+    padding: 0.2rem 0.8rem;
+    border-radius: 2rem;
+
+    display: flex;
+    position: relative;
+    top: -160px;
+}
+
+.inner-blue {
+    background: #61dafb;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.gem {
+    height: 50px;
+}
+
+.frens {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    position: relative;
+    top: -85px;
+}
+
+.ball {
+
+}
+
+.rank {
+    width: 50px;
+    height: auto;
+    position: relative;
+    top: -55px;
+}
+
+.cont-images {
+    height: 90px;
+    width: 170px;
+}
